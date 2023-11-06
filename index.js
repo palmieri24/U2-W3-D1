@@ -51,4 +51,28 @@ class Pet {
     this.species = species;
     this.breed = breed;
   }
+
+  static isSameOwner(petA, petB) {
+    if (petA.ownerName === petB.ownerName) {
+      console.log("true");
+    } else {
+      console.log("false");
+    }
+  }
 }
+
+const pets = [];
+
+const form = document.getElementById("myForm");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  let petName = document.getElementById("petName").value;
+  let ownerName = document.getElementById("ownerName").value;
+  let species = document.getElementById("species").value;
+  let breed = document.getElementById("breed").value;
+
+  const properties = [petName, ownerName, species, breed];
+
+  pets.push(properties);
+});
