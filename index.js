@@ -43,3 +43,12 @@ ComparingAges();
 //2)nella classe che utilizzerai per creare questi oggetti aggiungi anche un metodo che restituisca true se 2 animali condividono lo stesso padrone.
 
 //3)crea, raccogliendo i dati dal form, diverse istanze della classe Pet e mostrane i dati in una lista sottostante.
+
+class Pet {
+  constructor(petName, ownerName, species, breed) {
+    this.petName = petName;
+    this.ownerName = ownerName;
+    this.species = species;
+    this.breed = breed;
+  }
+}
